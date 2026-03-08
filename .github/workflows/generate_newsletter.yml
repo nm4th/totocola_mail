@@ -1,0 +1,45 @@
+name: メルマガ自動生成
+
+on:
+  # 毎週日曜 21:00 JST (= 12:00 UTC) に実行
+  schedule:
+    - cron: '0 12 * * 0'
+  # 手動実行も可能
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: '配信開始日 (YYYY-MM-DD)。空欄なら次の月曜日'
+        required: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests
+
+      - name: メルマガを生成
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.start_date }}" ]; then
+            python3 generate_newsletter.py "${{ github.event.inputs.start_date }}"
+          else
+            python3 generate_newsletter.py
+          fi
+
+      - name: 生成ファイルをアーティファクトとしてアップロード
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-${{ github.run_id }}
+          path: ~/Desktop/ととコーラメルマガ/
+          retention-days: 30
