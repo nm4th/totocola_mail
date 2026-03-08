@@ -26,6 +26,23 @@ from pathlib import Path
 
 import requests
 
+# ── .env 読み込み ─────────────────────────────────
+
+def _load_dotenv(env_path: Path) -> None:
+    """標準ライブラリのみで .env ファイルを読み込む。"""
+    if not env_path.exists():
+        return
+    with open(env_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            if key and key not in os.environ:
+                os.environ[key] = value
+
 # ── 定数 ──────────────────────────────────────────
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -222,8 +239,12 @@ bulletsは羅列が3つ以上ある場合のみ使用。不要な場合は空配
 emphasisは各セクションで最も伝えたい一文を指定。"""
 
 
-def call_claude_api(api_key: str, newsletter_type: str, used_themes: list, sample_text: str) -> dict:
-    """Claude APIを呼び出してメルマガコンテンツを生成する。"""
+def call_claude_api(api_key: str, newsletter_type: str, used_themes: list, sample_text: str, max_retries: int = 3) -> dict:
+    """Claude APIを呼び出してメルマガコンテンツを生成する。
+
+    一時的なエラー（429, 500, 502, 503）はリトライする。
+    クレジット不足などの永続的エラーは即座に停止する。
+    """
     user_prompt = build_user_prompt(newsletter_type, used_themes, sample_text)
 
     headers = {
@@ -241,8 +262,47 @@ def call_claude_api(api_key: str, newsletter_type: str, used_themes: list, sampl
         ],
     }
 
-    response = requests.post(CLAUDE_API_URL, headers=headers, json=payload, timeout=120)
-    if not response.ok:
+    retryable_statuses = {429, 500, 502, 503}
+
+    for attempt in range(max_retries + 1):
+        try:
+            response = requests.post(CLAUDE_API_URL, headers=headers, json=payload, timeout=120)
+        except requests.exceptions.ConnectionError as e:
+            if attempt < max_retries:
+                wait = 2 ** (attempt + 1)
+                print(f"  接続エラー（リトライ {attempt + 1}/{max_retries}、{wait}秒後）: {e}")
+                time.sleep(wait)
+                continue
+            raise
+
+        if response.ok:
+            break
+
+        # クレジット不足の専用メッセージ
+        if response.status_code == 400 and "credit balance is too low" in response.text:
+            print(f"\n  ❌ APIクレジット残高不足エラー")
+            print(f"  Anthropic Consoleでクレジットを確認してください:")
+            print(f"  https://console.anthropic.com/settings/billing")
+            print(f"\n  確認ポイント:")
+            print(f"    1. Billingページでクレジット残高が$5以上あるか")
+            print(f"    2. APIキーが正しい組織(Organization)に属しているか")
+            print(f"    3. チャージが反映済みか（数分かかる場合あり）")
+            sys.exit(1)
+
+        # 認証エラー
+        if response.status_code == 401:
+            print(f"\n  ❌ API認証エラー: APIキーが無効です")
+            print(f"  .envファイルのANTHROPIC_API_KEYを確認してください")
+            sys.exit(1)
+
+        # リトライ可能なエラー
+        if response.status_code in retryable_statuses and attempt < max_retries:
+            wait = 2 ** (attempt + 1)
+            print(f"  API エラー ({response.status_code})（リトライ {attempt + 1}/{max_retries}、{wait}秒後）")
+            time.sleep(wait)
+            continue
+
+        # その他のエラー
         print(f"  API エラー ({response.status_code}): {response.text}")
         response.raise_for_status()
 
@@ -521,6 +581,9 @@ def generate_week(start_date: date) -> None:
 # ── エントリーポイント ────────────────────────────
 
 def main():
+    # .env ファイルからAPIキーを読み込み
+    _load_dotenv(SCRIPT_DIR / ".env")
+
     print("=" * 60)
     print("ととコーラ メルマガ自動生成（Claude API連携）")
     print("=" * 60)
