@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.totocola.newsletter</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- ★ 実際のパスに合わせて修正してください -->
+        <string>/Users/YOUR_USERNAME/totocola_mail/run_newsletter.sh</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <!-- 毎週月曜日 9:00 に実行 (Day=1: 月曜日) -->
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <!-- ★ 実際のパスに合わせて修正してください -->
+    <string>/Users/YOUR_USERNAME/totocola_mail/launchd_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <!-- ★ 実際のパスに合わせて修正してください -->
+    <string>/Users/YOUR_USERNAME/totocola_mail/launchd_stderr.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
