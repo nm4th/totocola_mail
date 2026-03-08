@@ -35,7 +35,7 @@ STATE_FILE = Path.home() / ".totocola_state.json"
 OUTPUT_BASE = Path.home() / "Desktop" / "ととコーラメルマガ"
 
 CLAUDE_API_URL = "https://api.anthropic.com/v1/messages"
-CLAUDE_MODEL = "claude-sonnet-4-6"
+CLAUDE_MODEL = "claude-sonnet-4-20250514"
 CLAUDE_MAX_TOKENS = 2000
 
 # 7本分のタイプ配分: 世界観系5本 + 商品体験系1本 + 購買背中押し系1本
@@ -242,7 +242,9 @@ def call_claude_api(api_key: str, newsletter_type: str, used_themes: list, sampl
     }
 
     response = requests.post(CLAUDE_API_URL, headers=headers, json=payload, timeout=120)
-    response.raise_for_status()
+    if not response.ok:
+        print(f"  API エラー ({response.status_code}): {response.text}")
+        response.raise_for_status()
 
     result = response.json()
     content_text = result["content"][0]["text"]
