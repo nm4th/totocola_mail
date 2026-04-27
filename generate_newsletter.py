@@ -2,11 +2,13 @@
 """
 ととコーラ メルマガ自動生成スクリプト v2
 
-毎週日曜日〜月曜日に実行し、1週間分（4本: 月・火・木・土）のメルマガHTMLファイルを
-~/Desktop/ととコーラメルマガ/YYYY-MM-DD/ に出力する。
+毎週日曜日〜月曜日に GitHub Actions で実行し、1週間分（4本: 月・火・木・土）の
+メルマガHTMLファイルをリポジトリ内 output/YYYY-MM-DD/ に出力する。
 
 Claude APIで毎週新しいコンテンツを生成し、HTMLテンプレートに流し込む。
 件名・プレビュー・テーマ方向・長さの4軸でタイプを分けて生成する。
+
+使用済みテーマは state/used_themes.json に永続化される。
 
 使い方:
     python3 generate_newsletter.py              # 次の月曜日を起点に生成
@@ -49,8 +51,8 @@ def _load_dotenv(env_path: Path) -> None:
 SCRIPT_DIR = Path(__file__).resolve().parent
 TEMPLATES_DIR = SCRIPT_DIR / "templates"
 CONTENT_REQUIREMENTS = SCRIPT_DIR / "content_requirements.txt"
-STATE_FILE = Path.home() / ".totocola_state.json"
-OUTPUT_BASE = Path.home() / "Desktop" / "ととコーラメルマガ"
+STATE_FILE = SCRIPT_DIR / "state" / "used_themes.json"
+OUTPUT_BASE = SCRIPT_DIR / "output"
 
 CLAUDE_API_URL = "https://api.anthropic.com/v1/messages"
 CLAUDE_MODEL = "claude-sonnet-4-6"
@@ -189,6 +191,7 @@ def load_state() -> dict:
 
 def save_state(state: dict) -> None:
     """ステートファイルに保存する。"""
+    STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
 
