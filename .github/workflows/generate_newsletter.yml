@@ -11,6 +11,10 @@ on:
         description: '配信開始日 (YYYY-MM-DD)。空欄なら次の月曜日'
         required: false
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -27,19 +31,87 @@ jobs:
       - name: 依存パッケージをインストール
         run: pip install requests
 
+      - name: 配信開始日を決定
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.start_date }}" ]; then
+            START_DATE="${{ github.event.inputs.start_date }}"
+          else
+            START_DATE=$(python3 - <<'PY'
+          from datetime import date, timedelta
+          t = date.today()
+          if t.weekday() == 0:
+              d = 0
+          elif t.weekday() == 6:
+              d = 1
+          else:
+              d = (7 - t.weekday()) % 7
+          print((t + timedelta(days=d)).isoformat())
+          PY
+          )
+          fi
+          echo "start_date=$START_DATE" >> "$GITHUB_OUTPUT"
+          echo "配信開始日: $START_DATE"
+
       - name: メルマガを生成
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          if [ -n "${{ github.event.inputs.start_date }}" ]; then
-            python3 generate_newsletter.py "${{ github.event.inputs.start_date }}"
-          else
-            python3 generate_newsletter.py
-          fi
+          python3 generate_newsletter.py "${{ steps.date.outputs.start_date }}"
 
-      - name: 生成ファイルをアーティファクトとしてアップロード
-        uses: actions/upload-artifact@v4
+      - name: PR本文を準備
+        id: pr_body
+        run: |
+          START_DATE="${{ steps.date.outputs.start_date }}"
+          OUTPUT_DIR="output/${START_DATE}"
+          SUBJECT_LIST="${OUTPUT_DIR}/件名リスト.txt"
+
+          {
+            echo "body<<__EOF__"
+            echo "## 配信予定週: ${START_DATE} 〜"
+            echo ""
+            echo "Claude API で自動生成された ${START_DATE} 週分のメルマガ（月・火・木・土の4本）です。"
+            echo ""
+            echo "## 件名リスト"
+            echo ""
+            echo '```'
+            if [ -f "$SUBJECT_LIST" ]; then
+              cat "$SUBJECT_LIST"
+            else
+              echo "(件名リスト.txt が見つかりません)"
+            fi
+            echo '```'
+            echo ""
+            echo "## 生成ファイル"
+            echo ""
+            if [ -d "$OUTPUT_DIR" ]; then
+              for f in "$OUTPUT_DIR"/*.html; do
+                [ -e "$f" ] && echo "- \`${f}\`"
+              done
+            fi
+            echo ""
+            echo "## レビュー手順"
+            echo ""
+            echo "1. \`${OUTPUT_DIR}/\` 配下のHTMLを確認"
+            echo "2. 修正が必要なら本ブランチに直接コミット"
+            echo "3. マージ後、HTMLを Shopify Email にコピペで配信"
+            echo ""
+            echo "---"
+            echo "_このPRは GitHub Actions により自動生成されています。_"
+            echo "__EOF__"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: PRを作成
+        uses: peter-evans/create-pull-request@v6
         with:
-          name: newsletter-${{ github.run_id }}
-          path: ~/Desktop/ととコーラメルマガ/
-          retention-days: 30
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto/newsletter-${{ steps.date.outputs.start_date }}
+          base: main
+          commit-message: |
+            chore(newsletter): ${{ steps.date.outputs.start_date }} 配信分メルマガを自動生成
+          title: "chore(newsletter): ${{ steps.date.outputs.start_date }} 配信分メルマガ"
+          body: ${{ steps.pr_body.outputs.body }}
+          delete-branch: true
+          add-paths: |
+            output/**
+            state/**

@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 *.log
 .env
+
+# Shopify 自動化用の認証情報（絶対にコミットしない）
+scripts/storage_state.json
+scripts/screenshots/
