@@ -53,7 +53,7 @@ SCREENSHOT_DIR = SCRIPT_DIR / "screenshots"
 DEFAULT_TIMEOUT = 30_000
 
 # Shopify Messaging アプリのURL（ストア識別子で置換）
-MESSAGING_URL_TEMPLATE = "https://admin.shopify.com/store/{store}/apps/messaging"
+MESSAGING_URL_TEMPLATE = "https://admin.shopify.com/store/{store}/apps/shopify-messaging/landing"
 
 
 # ── ユーティリティ ────────────────────────────────
