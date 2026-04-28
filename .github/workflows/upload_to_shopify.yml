@@ -1,0 +1,69 @@
+name: Shopify下書き自動作成
+
+on:
+  # 自動メルマガ生成PRがmainにマージされたら起動
+  pull_request:
+    types: [closed]
+    branches: [main]
+  # 手動実行（任意の日付指定で再アップロードしたい時用）
+  workflow_dispatch:
+    inputs:
+      newsletter_date:
+        description: 'output/{date}/ の日付（例: 2026-04-27）'
+        required: true
+
+jobs:
+  upload:
+    # 自動マージPRの場合: auto/newsletter-* ブランチからマージされたPRのみ対象
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.pull_request.merged == true &&
+       startsWith(github.event.pull_request.head.ref, 'auto/newsletter-'))
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト（main）
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: 配信開始日を決定
+        id: date
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            DATE="${{ github.event.inputs.newsletter_date }}"
+          else
+            BRANCH="${{ github.event.pull_request.head.ref }}"
+            DATE="${BRANCH#auto/newsletter-}"
+          fi
+          echo "newsletter_date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "対象日付: $DATE"
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Shopify に下書きを作成
+        env:
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_STORAGE_STATE: ${{ secrets.SHOPIFY_STORAGE_STATE }}
+          NEWSLETTER_DATE: ${{ steps.date.outputs.newsletter_date }}
+          HEADLESS: 'true'
+        run: |
+          python3 scripts/upload_to_shopify.py
+
+      - name: 失敗時のスクリーンショットを保存
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shopify-upload-screenshots-${{ steps.date.outputs.newsletter_date }}
+          path: scripts/screenshots/
+          retention-days: 14
+          if-no-files-found: ignore

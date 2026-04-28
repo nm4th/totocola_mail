@@ -570,6 +570,7 @@ def generate_week(start_date: date) -> None:
     subject_list_lines = []
     new_themes = []
     next_dates: dict[str, str] = {}
+    manifest_entries: list[dict] = []
     total = len(WEEKLY_SCHEDULE)
 
     for index, slot in enumerate(WEEKLY_SCHEDULE, start=1):
@@ -623,6 +624,20 @@ def generate_week(start_date: date) -> None:
         subject_list_lines.append(f"プレビューパターン：{slot['preview_type']}")
         subject_list_lines.append("")
 
+        # manifest 用エントリ（uploader が読む構造化データ）
+        manifest_entries.append({
+            "filename": filename,
+            "date": date_str,
+            "weekday": weekday,
+            "subject": subject,
+            "preview": preview,
+            "preview_pattern": slot["preview_type"],
+            "subject_type": slot["subject_type"],
+            "theme_direction": slot["theme_direction"],
+            "length": slot["length"],
+            "theme": theme,
+        })
+
         # API レート制限対策（最後の1本以外は少し待つ）
         if index < total:
             time.sleep(2)
@@ -633,6 +648,18 @@ def generate_week(start_date: date) -> None:
         f.write("\n".join(subject_list_lines).rstrip() + "\n")
 
     print(f"\n  生成: 件名リスト.txt")
+
+    # manifest.json を出力（Shopify uploader が利用）
+    manifest = {
+        "start_date": start_date.isoformat(),
+        "generated_at": datetime.now().isoformat(),
+        "newsletters": manifest_entries,
+    }
+    manifest_path = output_dir / "manifest.json"
+    with open(manifest_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+
+    print(f"  生成: manifest.json")
 
     # ステートを更新
     state["used_themes"] = used_themes + new_themes

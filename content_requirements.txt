@@ -365,14 +365,39 @@ output/
 
 ## GitHub Actions による自動化フロー
 
+【ワークフロー1: メルマガ生成 (.github/workflows/generate_newsletter.yml)】
 1. 毎週日曜 21:00 JST、または workflow_dispatch で起動
 2. Ubuntu runner 上で generate_newsletter.py が実行され、
-   output/YYYY-MM-DD/ に4本のHTML + 件名リスト.txt を生成
+   output/YYYY-MM-DD/ に4本のHTML + 件名リスト.txt + manifest.json を生成
 3. state/used_themes.json が更新される（新規テーマ4件追加・next_dates更新）
 4. peter-evans/create-pull-request により
    auto/newsletter-YYYY-MM-DD ブランチが作られ、main へPR自動作成
 5. 担当者がPR上でHTMLを確認 → 修正があればコミット → マージ
-6. マージ後、HTMLを Shopify Email にコピペで配信（手動）
+
+【ワークフロー2: Shopify 下書き自動作成 (.github/workflows/upload_to_shopify.yml)】
+6. ワークフロー1のPRがmainにマージされると自動で起動
+7. Playwright で Shopify Admin Messaging を操作:
+   - キャンペーンを作成する → 独自コード を選択
+   - HTML をコードエディタにペースト
+   - 件名・プレビューテキストを入力
+   - 宛先「すべての購読者」を選択
+   - ページを閉じる（下書き自動保存）
+8. これを4本分繰り返し
+9. 担当者は Shopify Messaging で配信日時設定 → 配信実行（手動）
+
+【ワークフロー2の前提準備】
+- ローカルで scripts/init_session.py を1回実行してShopifyログイン
+- 生成された scripts/storage_state.json を base64 化
+- GitHub Secrets に登録:
+    SHOPIFY_STORE         : ストア識別子（例: totonoido）
+    SHOPIFY_STORAGE_STATE : 上記base64文字列
+    ANTHROPIC_API_KEY     : Claude APIキー（既設）
+- セッションは Shopify 側で30〜60日程度で切れるので、切れたら手動で再保存
+
+【失敗時の挙動】
+- ワークフロー2が失敗してもワークフロー1で生成されたHTMLは残る
+- 失敗時は scripts/screenshots/ がartifactとしてアップロードされ調査可能
+- 最悪の場合は手動でHTMLをShopify Messagingにコピペすればよい
 
 ----------------------------------------------------------------
 
