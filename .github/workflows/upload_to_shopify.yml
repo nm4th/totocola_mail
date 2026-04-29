@@ -20,7 +20,7 @@ jobs:
       (github.event.pull_request.merged == true &&
        startsWith(github.event.pull_request.head.ref, 'auto/newsletter-'))
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: リポジトリをチェックアウト（main）
@@ -40,15 +40,13 @@ jobs:
           echo "newsletter_date=$DATE" >> "$GITHUB_OUTPUT"
           echo "対象日付: $DATE"
 
-      - name: Python セットアップ
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
       - name: 依存パッケージをインストール
         run: |
-          pip install -r requirements.txt
-          playwright install --with-deps chromium
+          # self-hosted の Mac には既に python3 がある前提
+          python3 -m pip install --user --upgrade pip
+          python3 -m pip install --user -r requirements.txt
+          # Chrome は Mac にインストール済みのものを使う（channel='chrome'）
+          # Playwright内蔵Chromiumのインストールは不要
 
       - name: Shopify に下書きを作成
         env:

@@ -6,3 +6,5 @@ __pycache__/
 # Shopify 自動化用の認証情報（絶対にコミットしない）
 scripts/storage_state.json
 scripts/screenshots/
+scripts/.chrome_profile/
+scripts/.browser_profile/
