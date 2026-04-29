@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-05-04",
+  "generated_at": "2026-04-28T17:26:41.428721",
+  "newsletters": [
+    {
+      "filename": "2026-05-04_月_怒れない夜の理由.html",
+      "date": "2026-05-04",
+      "weekday": "月",
+      "subject": "怒れない夜の理由",
+      "preview": "腹が立っているのに、なぜか言葉が出てこない。それにも、意味があるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "怒れない理由"
+    },
+    {
+      "filename": "2026-05-05_火_夜の眠れなさは、正直だ。.html",
+      "date": "2026-05-05",
+      "weekday": "火",
+      "subject": "夜の眠れなさは、正直だ。",
+      "preview": "疲れているのに目が冴えている夜、それはあなたのせいじゃないかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "疲れているのに眠れない夜"
+    },
+    {
+      "filename": "2026-05-07_木_仲がいいのに、疲れる？.html",
+      "date": "2026-05-07",
+      "weekday": "木",
+      "subject": "仲がいいのに、疲れる？",
+      "preview": "嫌いなわけじゃないのに、会った後がどっと重い。その理由、知っていますか。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "仲がいいのに疲れる人がいる理由"
+    },
+    {
+      "filename": "2026-05-09_土_自分の気持ちに気づけなくなっているとき、どうしていますか。.html",
+      "date": "2026-05-09",
+      "weekday": "土",
+      "subject": "自分の気持ちに気づけなくなっているとき、どうしていますか。",
+      "preview": "感情がどこかに行ってしまったような夜、ありませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
