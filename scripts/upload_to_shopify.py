@@ -292,15 +292,16 @@ async def main() -> int:
     async with async_playwright() as p:
         # Bot検知を回避するため、実際のChrome（channel='chrome'）+ ステルスフラグで起動
         # self-hosted runnerが Mac の場合、ユーザーの Chrome がそのまま使われる
-        context: BrowserContext = await p.chromium.launch_persistent_context(
-            user_data_dir=str(SCRIPT_DIR / ".chrome_profile"),
-            headless=headless,
+        browser: Browser = await p.chromium.launch(
             channel="chrome",
-            locale="ja-JP",
-            viewport={"width": 1440, "height": 900},
+            headless=headless,
             args=["--disable-blink-features=AutomationControlled"],
             ignore_default_args=["--enable-automation"],
+        )
+        context: BrowserContext = await browser.new_context(
             storage_state=storage_state,
+            locale="ja-JP",
+            viewport={"width": 1440, "height": 900},
         )
         # webdriver flag を JS で隠す
         await context.add_init_script(
@@ -326,7 +327,7 @@ async def main() -> int:
             # 連続操作にならないよう少し間隔を空ける
             await asyncio.sleep(2)
 
-        await context.close()
+        await browser.close()
 
     print()
     print("=" * 60)
