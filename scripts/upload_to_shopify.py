@@ -60,14 +60,35 @@ MESSAGING_URL_TEMPLATE = "https://admin.shopify.com/store/{store}/apps/shopify-m
 
 
 def load_storage_state() -> dict | None:
-    """storage_state を環境変数（base64）またはローカルファイルから読み込む。"""
-    encoded = os.environ.get("SHOPIFY_STORAGE_STATE", "").strip()
-    if encoded:
+    """storage_state を環境変数（base64 or 生JSON）またはローカルファイルから読み込む。"""
+    raw = os.environ.get("SHOPIFY_STORAGE_STATE", "")
+    if raw:
+        # 全種類の空白文字（半角・全角スペース、改行、タブなど）を除去
+        import re
+        cleaned = re.sub(r"\s+", "", raw, flags=re.UNICODE)
+
+        # 1. 生JSON として直接パースを試みる（Secretに `{...}` を貼るパターン）
+        if cleaned.startswith("{"):
+            try:
+                return json.loads(cleaned)
+            except json.JSONDecodeError as e:
+                print(f"❌ SHOPIFY_STORAGE_STATE をJSONとしてパースできません: {e}", file=sys.stderr)
+                sys.exit(1)
+
+        # 2. base64 として復号
+        # 非ASCII文字（混入したスマートクオート等）は除外
+        ascii_bytes = cleaned.encode("ascii", errors="ignore")
         try:
-            decoded = base64.b64decode(encoded).decode("utf-8")
+            decoded = base64.b64decode(ascii_bytes, validate=False).decode("utf-8")
             return json.loads(decoded)
         except Exception as e:
-            print(f"❌ SHOPIFY_STORAGE_STATE のデコードに失敗: {e}", file=sys.stderr)
+            print(
+                f"❌ SHOPIFY_STORAGE_STATE のデコードに失敗: {e}\n"
+                f"   入力長(strip後): {len(cleaned)} chars\n"
+                f"   ASCII変換後長: {len(ascii_bytes)} bytes\n"
+                f"   先頭40文字: {cleaned[:40]!r}",
+                file=sys.stderr,
+            )
             sys.exit(1)
 
     if LOCAL_STORAGE_STATE.exists():
