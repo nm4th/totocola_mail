@@ -114,6 +114,42 @@ def load_manifest(date_str: str) -> dict:
         return json.load(f)
 
 
+async def find_in_any_frame(page: Page, role: str, name: str, timeout: int = 30_000):
+    """Locate an element by role/name in main frame OR any iframe（Shopify Admin はアプリをiframe埋込）。
+
+    見つかったら Locator を返す。タイムアウトしたら例外を投げる。
+    """
+    import time as _time
+
+    deadline = _time.time() + timeout / 1000
+    last_error: Exception | None = None
+    while _time.time() < deadline:
+        # メインフレーム
+        try:
+            loc = page.get_by_role(role, name=name).first
+            await loc.wait_for(state="visible", timeout=2_000)
+            return loc
+        except Exception as e:
+            last_error = e
+
+        # iframes
+        for frame in page.frames:
+            if frame == page.main_frame:
+                continue
+            try:
+                loc = frame.get_by_role(role, name=name).first
+                await loc.wait_for(state="visible", timeout=2_000)
+                return loc
+            except Exception as e:
+                last_error = e
+
+        await page.wait_for_timeout(500)
+
+    raise PlaywrightTimeoutError(
+        f"Element role={role} name={name!r} がどのフレームでも見つかりません: {last_error}"
+    )
+
+
 async def screenshot_on_failure(page: Page, label: str) -> None:
     """失敗時にスクリーンショットを保存（CIのartifact用）。"""
     SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -143,12 +179,26 @@ async def create_draft(
     page.set_default_timeout(DEFAULT_TIMEOUT)
 
     try:
-        # 1. Messaging アプリを開く
-        await page.goto(MESSAGING_URL_TEMPLATE.format(store=store))
-        await page.wait_for_load_state("networkidle")
+        # 1. Messaging アプリを開く（domcontentloaded で十分。
+        #    networkidle は Shopify の analytics で永遠に来ないので使わない）
+        await page.goto(
+            MESSAGING_URL_TEMPLATE.format(store=store),
+            wait_until="domcontentloaded",
+        )
+        # ページ読み込み直後の状態をデバッグ用に1枚撮る
+        await page.wait_for_timeout(3_000)
+        SCREENSHOT_DIR.mkdir(parents=True, exist_ok=True)
+        await page.screenshot(
+            path=str(SCREENSHOT_DIR / f"01_landing_{label}.png"),
+            full_page=False,
+        )
 
-        # 2. 「キャンペーンを作成する」をクリック
-        await page.get_by_role("button", name="キャンペーンを作成する").first.click()
+        # 2. 「キャンペーンを作成する」を待機してクリック
+        # Shopify Admin はアプリを iframe で埋め込むので、両方探す
+        create_button = await find_in_any_frame(
+            page, "button", "キャンペーンを作成する", timeout=DEFAULT_TIMEOUT
+        )
+        await create_button.click()
 
         # 3. テンプレ選択画面で「独自コード」を選ぶ
         await page.get_by_text("独自コード", exact=True).first.click()
@@ -240,11 +290,21 @@ async def main() -> int:
     failed: list[str] = []
 
     async with async_playwright() as p:
-        browser: Browser = await p.chromium.launch(headless=headless)
-        context: BrowserContext = await browser.new_context(
-            storage_state=storage_state,
+        # Bot検知を回避するため、実際のChrome（channel='chrome'）+ ステルスフラグで起動
+        # self-hosted runnerが Mac の場合、ユーザーの Chrome がそのまま使われる
+        context: BrowserContext = await p.chromium.launch_persistent_context(
+            user_data_dir=str(SCRIPT_DIR / ".chrome_profile"),
+            headless=headless,
+            channel="chrome",
             locale="ja-JP",
             viewport={"width": 1440, "height": 900},
+            args=["--disable-blink-features=AutomationControlled"],
+            ignore_default_args=["--enable-automation"],
+            storage_state=storage_state,
+        )
+        # webdriver flag を JS で隠す
+        await context.add_init_script(
+            'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
         )
 
         for entry in manifest["newsletters"]:
@@ -266,7 +326,7 @@ async def main() -> int:
             # 連続操作にならないよう少し間隔を空ける
             await asyncio.sleep(2)
 
-        await browser.close()
+        await context.close()
 
     print()
     print("=" * 60)
