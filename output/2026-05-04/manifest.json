@@ -1,54 +1,54 @@
 {
   "start_date": "2026-05-04",
-  "generated_at": "2026-04-28T17:26:41.428721",
+  "generated_at": "2026-05-03T12:56:02.693699",
   "newsletters": [
     {
-      "filename": "2026-05-04_月_怒れない夜の理由.html",
+      "filename": "2026-05-04_月_感情に気づけない夜の理由.html",
       "date": "2026-05-04",
       "weekday": "月",
-      "subject": "怒れない夜の理由",
-      "preview": "腹が立っているのに、なぜか言葉が出てこない。それにも、意味があるかもしれません。",
+      "subject": "感情に気づけない夜の理由",
+      "preview": "答えは意外と、シンプルなところにあるかもしれません。",
       "preview_pattern": "A",
       "subject_type": "reason",
       "theme_direction": "自分の内側・感情系",
       "length": "short",
-      "theme": "怒れない理由"
+      "theme": "自分の感情に気づけなくなる理由"
     },
     {
-      "filename": "2026-05-05_火_夜の眠れなさは、正直だ。.html",
+      "filename": "2026-05-05_火_寝る前の習慣を、変えた夜。.html",
       "date": "2026-05-05",
       "weekday": "火",
-      "subject": "夜の眠れなさは、正直だ。",
-      "preview": "疲れているのに目が冴えている夜、それはあなたのせいじゃないかもしれません。",
+      "subject": "寝る前の習慣を、変えた夜。",
+      "preview": "やめようと思いながら、今夜もスマホを開いてしまう。そんな夜が続いていませんか。",
       "preview_pattern": "B",
       "subject_type": "statement",
       "theme_direction": "夜の行動・習慣系",
       "length": "short",
-      "theme": "疲れているのに眠れない夜"
+      "theme": "寝る前のスマホ習慣と夜のルーティン"
     },
     {
-      "filename": "2026-05-07_木_仲がいいのに、疲れる？.html",
+      "filename": "2026-05-07_木_距離を置くのは、冷たいことじゃない。.html",
       "date": "2026-05-07",
       "weekday": "木",
-      "subject": "仲がいいのに、疲れる？",
-      "preview": "嫌いなわけじゃないのに、会った後がどっと重い。その理由、知っていますか。",
+      "subject": "距離を置くのは、冷たいことじゃない。",
+      "preview": "少し離れることで、はじめて見えるものがあるかもしれません。",
       "preview_pattern": "A",
       "subject_type": "question",
       "theme_direction": "人間関係・他者との距離系",
       "length": "short",
-      "theme": "仲がいいのに疲れる人がいる理由"
+      "theme": "距離を置くことへの罪悪感"
     },
     {
-      "filename": "2026-05-09_土_自分の気持ちに気づけなくなっているとき、どうしていますか。.html",
+      "filename": "2026-05-09_土_感情を後回しにしてきた人が、夜に気づくこと。.html",
       "date": "2026-05-09",
       "weekday": "土",
-      "subject": "自分の気持ちに気づけなくなっているとき、どうしていますか。",
-      "preview": "感情がどこかに行ってしまったような夜、ありませんか？",
+      "subject": "感情を後回しにしてきた人が、夜に気づくこと。",
+      "preview": "今日、自分がどんな気持ちだったか、覚えていますか？",
       "preview_pattern": "C",
       "subject_type": "reason",
       "theme_direction": "自分の内側・感情系",
       "length": "long",
-      "theme": "自分の感情に気づけなくなる理由"
+      "theme": "感情を後回しにしてきた日"
     }
   ]
 }
