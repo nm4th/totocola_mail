@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-05-11",
+  "generated_at": "2026-05-10T13:03:50.130086",
+  "newsletters": [
+    {
+      "filename": "2026-05-11_月_怒れない夜の正体.html",
+      "date": "2026-05-11",
+      "weekday": "月",
+      "subject": "怒れない夜の正体",
+      "preview": "感情が出てこない夜には、ちゃんと理由があります。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情を感じられなくなる夜"
+    },
+    {
+      "filename": "2026-05-12_火_夜に眠れない理由.html",
+      "date": "2026-05-12",
+      "weekday": "火",
+      "subject": "夜に眠れない理由",
+      "preview": "疲れているのに、頭だけがずっと動いている。そんな夜、ありませんか。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜の頭の使いすぎ"
+    },
+    {
+      "filename": "2026-05-14_木_距離を置くのは、冷たいことじゃない。.html",
+      "date": "2026-05-14",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たいことじゃない。",
+      "preview": "少し離れてみて、初めてわかることがある。そんな夜の話です。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-05-16_土_感情がよくわからなくなってきたのは、感じることをやめたからじゃない。.html",
+      "date": "2026-05-16",
+      "weekday": "土",
+      "subject": "感情がよくわからなくなってきたのは、感じることをやめたからじゃない。",
+      "preview": "感じないようにしてきた、その理由に気づいていますか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情が薄れていく理由・感じることをやめていくプロセス"
+    }
+  ]
+}
