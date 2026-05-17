@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-05-18",
+  "generated_at": "2026-05-17T13:05:14.690538",
+  "newsletters": [
+    {
+      "filename": "2026-05-18_月_自分を好きになれない夜.html",
+      "date": "2026-05-18",
+      "weekday": "月",
+      "subject": "自分を好きになれない夜",
+      "preview": "それは、自分を見る角度が変わっていないだけかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "自分を好きになれない理由"
+    },
+    {
+      "filename": "2026-05-19_火_夜の癖、気づいていますか.html",
+      "date": "2026-05-19",
+      "weekday": "火",
+      "subject": "夜の癖、気づいていますか",
+      "preview": "毎晩同じことをしているのに、満たされない夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "毎晩繰り返す夜の習慣と満たされなさ"
+    },
+    {
+      "filename": "2026-05-21_木_仲のいい人が、苦手ですか？.html",
+      "date": "2026-05-21",
+      "weekday": "木",
+      "subject": "仲のいい人が、苦手ですか？",
+      "preview": "気疲れする相手ほど、大切にしようとしているのかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "仲がいいのに距離を測り続けている疲れ"
+    },
+    {
+      "filename": "2026-05-23_土_自分のことが、よくわからなくなってきた理由。.html",
+      "date": "2026-05-23",
+      "weekday": "土",
+      "subject": "自分のことが、よくわからなくなってきた理由。",
+      "preview": "それは、自分を後回しにしすぎてきたせいかもしれません。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分を見失ってきた感覚の正体"
+    }
+  ]
+}
