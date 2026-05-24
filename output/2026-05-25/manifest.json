@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-05-25",
+  "generated_at": "2026-05-24T13:10:02.791541",
+  "newsletters": [
+    {
+      "filename": "2026-05-25_月_感情が薄くなる夜.html",
+      "date": "2026-05-25",
+      "weekday": "月",
+      "subject": "感情が薄くなる夜",
+      "preview": "感じにくくなったのは、あなたのせいじゃないかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情が薄くなってきた感覚"
+    },
+    {
+      "filename": "2026-05-26_火_夜に眠れない理由.html",
+      "date": "2026-05-26",
+      "weekday": "火",
+      "subject": "夜に眠れない理由",
+      "preview": "疲れているはずなのに、目が冴えている。そんな夜、ありませんか。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜と体の緊張"
+    },
+    {
+      "filename": "2026-05-28_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-05-28",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し離れることで、やっと見えてくるものがある気がします。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-05-30_土_自分のことが、ちょっとわからなくなってきた夜の話。.html",
+      "date": "2026-05-30",
+      "weekday": "土",
+      "subject": "自分のことが、ちょっとわからなくなってきた夜の話。",
+      "preview": "好きなものも、したいことも、なんとなく霞んでいませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分がわからなくなるとき"
+    }
+  ]
+}
