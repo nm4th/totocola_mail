@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-06-01",
+  "generated_at": "2026-05-31T13:23:40.679748",
+  "newsletters": [
+    {
+      "filename": "2026-06-01_月_感情が鈍くなる理由.html",
+      "date": "2026-06-01",
+      "weekday": "月",
+      "subject": "感情が鈍くなる理由",
+      "preview": "感じにくくなったのは、感じすぎてきたからかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情が鈍くなる理由"
+    },
+    {
+      "filename": "2026-06-02_火_夜のルーティンが崩れる日.html",
+      "date": "2026-06-02",
+      "weekday": "火",
+      "subject": "夜のルーティンが崩れる日",
+      "preview": "やろうと思っていたことが、何もできなかった夜。それでいいと思います。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜のルーティンが崩れる日"
+    },
+    {
+      "filename": "2026-06-04_木_気を遣う相手がいますか？.html",
+      "date": "2026-06-04",
+      "weekday": "木",
+      "subject": "気を遣う相手がいますか？",
+      "preview": "疲れているのに、なぜかその人のことが頭から離れない。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "気を遣う相手がいると疲れる理由"
+    },
+    {
+      "filename": "2026-06-06_土_感情に気づけなくなってきたな、と思う夜はありませんか。.html",
+      "date": "2026-06-06",
+      "weekday": "土",
+      "subject": "感情に気づけなくなってきたな、と思う夜はありませんか。",
+      "preview": "忙しさの中で、自分の気持ちが見えなくなっていませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情に気づけなくなる理由"
+    }
+  ]
+}
