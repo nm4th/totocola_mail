@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-06-08",
+  "generated_at": "2026-06-07T13:28:37.152637",
+  "newsletters": [
+    {
+      "filename": "2026-06-08_月_泣けない夜の話.html",
+      "date": "2026-06-08",
+      "weekday": "月",
+      "subject": "泣けない夜の話",
+      "preview": "涙が出ないのは、感じていないからじゃないと思います。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "泣けない夜の感情の行き場"
+    },
+    {
+      "filename": "2026-06-09_火_寝る前の習慣を、変えてみた。.html",
+      "date": "2026-06-09",
+      "weekday": "火",
+      "subject": "寝る前の習慣を、変えてみた。",
+      "preview": "何かをやめるだけで、夜が変わることがある。そんな話です。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "寝る前の習慣を変える夜"
+    },
+    {
+      "filename": "2026-06-11_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-06-11",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し離れることで、やっと見えてくるものがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-06-13_土_感情に気づけなくなってきたのは、疲れているからかもしれない。.html",
+      "date": "2026-06-13",
+      "weekday": "土",
+      "subject": "感情に気づけなくなってきたのは、疲れているからかもしれない。",
+      "preview": "あなたは今、何を感じていますか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
