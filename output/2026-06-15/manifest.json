@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-06-15",
+  "generated_at": "2026-06-14T13:48:14.416800",
+  "newsletters": [
+    {
+      "filename": "2026-06-15_月_感情が動かなくなる理由.html",
+      "date": "2026-06-15",
+      "weekday": "月",
+      "subject": "感情が動かなくなる理由",
+      "preview": "無感覚になってきたのは、疲れているサインかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情が動かなくなってきた感覚"
+    },
+    {
+      "filename": "2026-06-16_火_夜に眠れない理由.html",
+      "date": "2026-06-16",
+      "weekday": "火",
+      "subject": "夜に眠れない理由",
+      "preview": "疲れているのに目が覚めている。それは体じゃなくて、頭の問題かもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜の頭と体のズレ"
+    },
+    {
+      "filename": "2026-06-18_木_距離を置くのは冷たさじゃない.html",
+      "date": "2026-06-18",
+      "weekday": "木",
+      "subject": "距離を置くのは冷たさじゃない",
+      "preview": "少し離れることが、関係を長続きさせるのかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近いのに疲れる関係と距離を置くこと"
+    },
+    {
+      "filename": "2026-06-20_土_自分のことが、自分でわからなくなる夜がある理由。.html",
+      "date": "2026-06-20",
+      "weekday": "土",
+      "subject": "自分のことが、自分でわからなくなる夜がある理由。",
+      "preview": "それは、自分が消えたのではなくて——",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分を見失う感覚と自己理解の難しさ"
+    }
+  ]
+}
