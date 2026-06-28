@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-06-29",
+  "generated_at": "2026-06-28T13:23:56.917917",
+  "newsletters": [
+    {
+      "filename": "2026-06-29_月_泣けない夜の話.html",
+      "date": "2026-06-29",
+      "weekday": "月",
+      "subject": "泣けない夜の話",
+      "preview": "感情が出てこない夜は、疲れていないからじゃないかもしれない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "涙が出ない夜"
+    },
+    {
+      "filename": "2026-06-30_火_夜になると別人になる。.html",
+      "date": "2026-06-30",
+      "weekday": "火",
+      "subject": "夜になると別人になる。",
+      "preview": "日中の自分と、夜の自分が違う気がするのは、あなただけではないと思います。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "昼と夜で自分が変わる感覚"
+    },
+    {
+      "filename": "2026-07-02_木_距離を置くのは、冷たいこと？.html",
+      "date": "2026-07-02",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たいこと？",
+      "preview": "少し遠ざかりたくなるのは、あなたが疲れているサインかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置きたくなる気持ちの正体"
+    },
+    {
+      "filename": "2026-07-04_土_自分の気持ちに気づけなくなっていくのには、理由があります。.html",
+      "date": "2026-07-04",
+      "weekday": "土",
+      "subject": "自分の気持ちに気づけなくなっていくのには、理由があります。",
+      "preview": "感情が薄れてきたと感じたら、それはどういうことなのか。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
