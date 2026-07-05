@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-07-06",
+  "generated_at": "2026-07-05T13:17:42.720069",
+  "newsletters": [
+    {
+      "filename": "2026-07-06_月_自分を責める夜の理由.html",
+      "date": "2026-07-06",
+      "weekday": "月",
+      "subject": "自分を責める夜の理由",
+      "preview": "悪いのはあなたじゃない。ただ、疲れているだけかもしれない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "自分を責めてしまう理由"
+    },
+    {
+      "filename": "2026-07-07_火_夜の準備、していますか.html",
+      "date": "2026-07-07",
+      "weekday": "火",
+      "subject": "夜の準備、していますか",
+      "preview": "寝る前に何かを「終わらせよう」としていませんか。その癖、少し疲れているかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠る前の「終わらせよう」習慣"
+    },
+    {
+      "filename": "2026-07-09_木_気を遣いすぎていませんか.html",
+      "date": "2026-07-09",
+      "weekday": "木",
+      "subject": "気を遣いすぎていませんか",
+      "preview": "夜になると、どっと疲れが出る理由があるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "気を遣いすぎて自分を見失う理由"
+    },
+    {
+      "filename": "2026-07-11_土_自分のことが「わからなくなってきた」と感じる夜の話。.html",
+      "date": "2026-07-11",
+      "weekday": "土",
+      "subject": "自分のことが「わからなくなってきた」と感じる夜の話。",
+      "preview": "それは迷子になったんじゃなくて、疲れているだけかもしれない。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分がわからなくなるとき"
+    }
+  ]
+}
