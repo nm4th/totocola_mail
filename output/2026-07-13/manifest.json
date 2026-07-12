@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-07-13",
+  "generated_at": "2026-07-12T13:04:26.762305",
+  "newsletters": [
+    {
+      "filename": "2026-07-13_月_怒れない夜の正体.html",
+      "date": "2026-07-13",
+      "weekday": "月",
+      "subject": "怒れない夜の正体",
+      "preview": "感情が出てこないのは、弱いからじゃないかもしれない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "怒れない・悲しめない・感情が出てこない理由"
+    },
+    {
+      "filename": "2026-07-14_火_夜のルーティンが、重荷になっていませんか.html",
+      "date": "2026-07-14",
+      "weekday": "火",
+      "subject": "夜のルーティンが、重荷になっていませんか",
+      "preview": "「しなきゃ」と思いながら続けている習慣、ありませんか。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜の習慣が義務になっていく理由"
+    },
+    {
+      "filename": "2026-07-16_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-07-16",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し遠ざかることで、やっと自分に戻れることがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-07-18_土_自分の気持ちがわからなくなるのは、聞く暇がなかっただけかもしれない。.html",
+      "date": "2026-07-18",
+      "weekday": "土",
+      "subject": "自分の気持ちがわからなくなるのは、聞く暇がなかっただけかもしれない。",
+      "preview": "今日、自分に何か聞いてあげられましたか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の気持ちを後回しにしてきた理由"
+    }
+  ]
+}
