@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-07-20",
+  "generated_at": "2026-07-19T13:02:00.995742",
+  "newsletters": [
+    {
+      "filename": "2026-07-20_月_怒れない夜の話.html",
+      "date": "2026-07-20",
+      "weekday": "月",
+      "subject": "怒れない夜の話",
+      "preview": "感情を押し込めているうちに、自分でも気づかなくなる。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情を押し込めてしまう理由"
+    },
+    {
+      "filename": "2026-07-21_火_夜の寝つきが悪い理由.html",
+      "date": "2026-07-21",
+      "weekday": "火",
+      "subject": "夜の寝つきが悪い理由",
+      "preview": "体は疲れているのに、頭だけが止まらない夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜に頭だけが動き続ける理由"
+    },
+    {
+      "filename": "2026-07-23_木_誰かと話すと疲れますか？.html",
+      "date": "2026-07-23",
+      "weekday": "木",
+      "subject": "誰かと話すと疲れますか？",
+      "preview": "気が合う人なのに、一緒にいると消耗する。その理由、少しわかる気がします。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "気が合うのに一緒にいると疲れる人がいる理由"
+    },
+    {
+      "filename": "2026-07-25_土_自分の感情に気づけなくなるのは、感じ続けてきた証拠かもしれない。.html",
+      "date": "2026-07-25",
+      "weekday": "土",
+      "subject": "自分の感情に気づけなくなるのは、感じ続けてきた証拠かもしれない。",
+      "preview": "気づけば、何を感じているかわからなくなっていませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情が麻痺していくプロセス"
+    }
+  ]
+}
