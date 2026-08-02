@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-08-03",
+  "generated_at": "2026-08-02T13:06:15.564752",
+  "newsletters": [
+    {
+      "filename": "2026-08-03_月_満たされない夜の理由.html",
+      "date": "2026-08-03",
+      "weekday": "月",
+      "subject": "満たされない夜の理由",
+      "preview": "何かが足りない気がするのに、その何かがわからない夜。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "満たされない感覚の正体"
+    },
+    {
+      "filename": "2026-08-04_火_夜に眠れない夜のこと.html",
+      "date": "2026-08-04",
+      "weekday": "火",
+      "subject": "夜に眠れない夜のこと",
+      "preview": "横になっているのに、頭だけが動き続けている夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "疲れているのに眠れない夜"
+    },
+    {
+      "filename": "2026-08-06_木_距離を置きたい人がいる？.html",
+      "date": "2026-08-06",
+      "weekday": "木",
+      "subject": "距離を置きたい人がいる？",
+      "preview": "それは冷たさじゃなくて、自分を守ろうとしているだけかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置きたい人への罪悪感"
+    },
+    {
+      "filename": "2026-08-08_土_自分のことが、よくわからなくなってきた気がする理由。.html",
+      "date": "2026-08-08",
+      "weekday": "土",
+      "subject": "自分のことが、よくわからなくなってきた気がする理由。",
+      "preview": "それは、自分を後回しにしすぎた夜が続いたからかもしれない。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の輪郭が薄れていく感覚"
+    }
+  ]
+}
