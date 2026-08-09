@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-08-10",
+  "generated_at": "2026-08-09T12:36:10.540333",
+  "newsletters": [
+    {
+      "filename": "2026-08-10_月_自分を後回しにしてきた理由.html",
+      "date": "2026-08-10",
+      "weekday": "月",
+      "subject": "自分を後回しにしてきた理由",
+      "preview": "気づいたら、自分のことだけ丁寧にできていなかった。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "自分を後回しにし続ける理由"
+    },
+    {
+      "filename": "2026-08-11_火_夜のルーティンが、空っぽかもしれない。.html",
+      "date": "2026-08-11",
+      "weekday": "火",
+      "subject": "夜のルーティンが、空っぽかもしれない。",
+      "preview": "こなしているだけの夜に、なっていませんか。毎日同じことをしているのに、なぜか満たされない。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "ルーティンをこなすだけの夜"
+    },
+    {
+      "filename": "2026-08-13_木_距離を置いていい人がいる.html",
+      "date": "2026-08-13",
+      "weekday": "木",
+      "subject": "距離を置いていい人がいる",
+      "preview": "仲が悪いわけじゃない。でも、会うたびに少し消耗する人が。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "会うたびに消耗する人との距離感"
+    },
+    {
+      "filename": "2026-08-15_土_感情に気づけなくなっているとき、何が起きているのか。.html",
+      "date": "2026-08-15",
+      "weekday": "土",
+      "subject": "感情に気づけなくなっているとき、何が起きているのか。",
+      "preview": "あの頃は、もっと感じられていた気がしませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
