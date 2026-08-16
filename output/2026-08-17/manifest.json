@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-08-17",
+  "generated_at": "2026-08-16T12:25:11.550344",
+  "newsletters": [
+    {
+      "filename": "2026-08-17_月_満たされない夜の理由.html",
+      "date": "2026-08-17",
+      "weekday": "月",
+      "subject": "満たされない夜の理由",
+      "preview": "何かが足りない気がするのは、何かが多すぎるせいかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "満たされない感覚の正体"
+    },
+    {
+      "filename": "2026-08-18_火_夜ふかしは、逃げじゃない。.html",
+      "date": "2026-08-18",
+      "weekday": "火",
+      "subject": "夜ふかしは、逃げじゃない。",
+      "preview": "眠れないんじゃなくて、まだ終わらせたくないのかもしれない。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜ふかしをやめられない理由"
+    },
+    {
+      "filename": "2026-08-20_木_嫌いじゃないのに、疲れる？.html",
+      "date": "2026-08-20",
+      "weekday": "木",
+      "subject": "嫌いじゃないのに、疲れる？",
+      "preview": "仲がいい人ほど、一緒にいたあとにどっと疲れることがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "嫌いじゃないのに疲れる人との距離"
+    },
+    {
+      "filename": "2026-08-22_土_自分のことがよくわからなくなるのは、なぜだろうと思う夜に。.html",
+      "date": "2026-08-22",
+      "weekday": "土",
+      "subject": "自分のことがよくわからなくなるのは、なぜだろうと思う夜に。",
+      "preview": "それは、あなたが消えたのではなくて——",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分を見失う夜の正体"
+    }
+  ]
+}
