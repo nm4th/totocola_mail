@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-08-24",
+  "generated_at": "2026-08-23T12:25:11.417060",
+  "newsletters": [
+    {
+      "filename": "2026-08-24_月_泣けない夜の話.html",
+      "date": "2026-08-24",
+      "weekday": "月",
+      "subject": "泣けない夜の話",
+      "preview": "悲しいはずなのに、涙が出ない。それは弱いからじゃないと思います。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "泣けない夜の感情の行き場"
+    },
+    {
+      "filename": "2026-08-25_火_夜のルーティンが壊れた日.html",
+      "date": "2026-08-25",
+      "weekday": "火",
+      "subject": "夜のルーティンが壊れた日",
+      "preview": "何もする気になれない夜、それは珍しくない夜です",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜のルーティンが崩れたときの感覚"
+    },
+    {
+      "filename": "2026-08-27_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-08-27",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し離れることで、やっと見えてくるものがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-08-29_土_自分のことが、わからなくなってきたと感じる夜の話。.html",
+      "date": "2026-08-29",
+      "weekday": "土",
+      "subject": "自分のことが、わからなくなってきたと感じる夜の話。",
+      "preview": "それは、自分を見失ったのではないかもしれません。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分がわからなくなるとき"
+    }
+  ]
+}
