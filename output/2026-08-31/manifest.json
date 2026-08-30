@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-08-31",
+  "generated_at": "2026-08-30T15:51:10.300865",
+  "newsletters": [
+    {
+      "filename": "2026-08-31_月_怒れない夜の話。.html",
+      "date": "2026-08-31",
+      "weekday": "月",
+      "subject": "怒れない夜の話。",
+      "preview": "感情が出てこないのは、弱さじゃないかもしれない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "怒りを感じられなくなる理由"
+    },
+    {
+      "filename": "2026-09-01_火_夜中に目が覚める夜.html",
+      "date": "2026-09-01",
+      "weekday": "火",
+      "subject": "夜中に目が覚める夜",
+      "preview": "眠れているのに、疲れが取れていない気がするのはなぜだろう。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜中に目が覚める・浅い眠りの夜"
+    },
+    {
+      "filename": "2026-09-03_木_距離を置くのは冷たいこと？.html",
+      "date": "2026-09-03",
+      "weekday": "木",
+      "subject": "距離を置くのは冷たいこと？",
+      "preview": "少し離れることで、大切にできる関係があるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近いのに疲れる関係と距離の取り方"
+    },
+    {
+      "filename": "2026-09-05_土_感情が薄くなってきたと感じるのは、なぜなのでしょう。.html",
+      "date": "2026-09-05",
+      "weekday": "土",
+      "subject": "感情が薄くなってきたと感じるのは、なぜなのでしょう。",
+      "preview": "怒れない、泣けない。それは鈍感になったわけじゃない。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情が薄くなってきたと感じる理由"
+    }
+  ]
+}
