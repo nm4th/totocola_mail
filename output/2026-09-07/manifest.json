@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-09-07",
+  "generated_at": "2026-09-06T14:45:05.369774",
+  "newsletters": [
+    {
+      "filename": "2026-09-07_月_涙が出ない夜の話.html",
+      "date": "2026-09-07",
+      "weekday": "月",
+      "subject": "涙が出ない夜の話",
+      "preview": "泣けないからって、傷ついていないわけじゃない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "涙が出ない夜"
+    },
+    {
+      "filename": "2026-09-08_火_夜のルーティンが、空洞になっていた。.html",
+      "date": "2026-09-08",
+      "weekday": "火",
+      "subject": "夜のルーティンが、空洞になっていた。",
+      "preview": "こなしているのに、何も残っていない気がする夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜のルーティンが空洞になっていく感覚"
+    },
+    {
+      "filename": "2026-09-10_木_その距離感、正しい？.html",
+      "date": "2026-09-10",
+      "weekday": "木",
+      "subject": "その距離感、正しい？",
+      "preview": "近すぎず、遠すぎず。その人との距離が、今日もわからなかった夜に。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離感がわからなくなる人間関係"
+    },
+    {
+      "filename": "2026-09-12_土_「自分の気持ちがわからない」と感じる夜の、ほんとうの意味。.html",
+      "date": "2026-09-12",
+      "weekday": "土",
+      "subject": "「自分の気持ちがわからない」と感じる夜の、ほんとうの意味。",
+      "preview": "感情が見えなくなるのは、弱さじゃないかもしれません。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
