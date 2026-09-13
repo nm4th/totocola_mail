@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-09-14",
+  "generated_at": "2026-09-13T15:26:25.760731",
+  "newsletters": [
+    {
+      "filename": "2026-09-14_月_感情が薄れてきた理由.html",
+      "date": "2026-09-14",
+      "weekday": "月",
+      "subject": "感情が薄れてきた理由",
+      "preview": "何かを感じにくくなったのは、心が鈍ったのではないかもしれない。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情が薄れてきた・感じにくくなった理由"
+    },
+    {
+      "filename": "2026-09-15_火_夜のルーティンが壊れた日.html",
+      "date": "2026-09-15",
+      "weekday": "火",
+      "subject": "夜のルーティンが壊れた日",
+      "preview": "いつもと違う夜に、気づけることがあるかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜のルーティンが崩れたときの感覚"
+    },
+    {
+      "filename": "2026-09-17_木_合わせすぎた日の夜.html",
+      "date": "2026-09-17",
+      "weekday": "木",
+      "subject": "合わせすぎた日の夜",
+      "preview": "今日、何回「大丈夫」と言いましたか。夜にだけ気づくことがあります。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "合わせすぎた日の疲れと夜の回復"
+    },
+    {
+      "filename": "2026-09-19_土_感情が動かなくなってきた、と気づいた夜の話。.html",
+      "date": "2026-09-19",
+      "weekday": "土",
+      "subject": "感情が動かなくなってきた、と気づいた夜の話。",
+      "preview": "それは鈍くなったのではなく、守ろうとしているのかもしれません。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情が薄れてきた・感じにくくなった理由"
+    }
+  ]
+}
