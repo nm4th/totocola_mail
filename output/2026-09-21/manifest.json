@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-09-21",
+  "generated_at": "2026-09-20T15:14:23.908709",
+  "newsletters": [
+    {
+      "filename": "2026-09-21_月_怒れない夜の正体.html",
+      "date": "2026-09-21",
+      "weekday": "月",
+      "subject": "怒れない夜の正体",
+      "preview": "感情がうまく出てこない夜には、理由があるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "感情がうまく出せない理由"
+    },
+    {
+      "filename": "2026-09-22_火_夜中に目が覚める夜.html",
+      "date": "2026-09-22",
+      "weekday": "火",
+      "subject": "夜中に目が覚める夜",
+      "preview": "眠れていないのではなく、眠ることを後回しにしているのかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜中に目が覚める・眠りが浅い習慣"
+    },
+    {
+      "filename": "2026-09-24_木_距離が縮まるほど、疲れる？.html",
+      "date": "2026-09-24",
+      "weekday": "木",
+      "subject": "距離が縮まるほど、疲れる？",
+      "preview": "仲がいいからこそ、気を遣ってしまうことがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "親しいのに気を遣ってしまう関係"
+    },
+    {
+      "filename": "2026-09-26_土_自分の気持ちに気づかないまま、一日が終わっていませんか。.html",
+      "date": "2026-09-26",
+      "weekday": "土",
+      "subject": "自分の気持ちに気づかないまま、一日が終わっていませんか。",
+      "preview": "感情に気づくことが、少しずつ自分を取り戻すきっかけになるかもしれない。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
