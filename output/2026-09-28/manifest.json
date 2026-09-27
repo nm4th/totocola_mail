@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-09-28",
+  "generated_at": "2026-09-27T16:10:53.654254",
+  "newsletters": [
+    {
+      "filename": "2026-09-28_月_自分の気持ちに、鈍くなっていた。.html",
+      "date": "2026-09-28",
+      "weekday": "月",
+      "subject": "自分の気持ちに、鈍くなっていた。",
+      "preview": "気づけば、自分の感情を後回しにし続けていたのかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "自分の感情に鈍くなる理由"
+    },
+    {
+      "filename": "2026-09-29_火_眠れない夜のこと.html",
+      "date": "2026-09-29",
+      "weekday": "火",
+      "subject": "眠れない夜のこと",
+      "preview": "疲れているのに眠れない。それ、体じゃなくて頭の話かもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜に頭が止まらない理由"
+    },
+    {
+      "filename": "2026-10-01_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-10-01",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し遠くにいることで、やっと息ができることがある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近いのに疲れる関係と、距離を置く勇気"
+    },
+    {
+      "filename": "2026-10-03_土_「これでよかったのかな」と思う夜が続いている理由.html",
+      "date": "2026-10-03",
+      "weekday": "土",
+      "subject": "「これでよかったのかな」と思う夜が続いている理由",
+      "preview": "その問いは、あなたが自分を見失っていないサインかもしれません。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "「これでよかったのかな」と繰り返す夜の自己不信"
+    }
+  ]
+}
