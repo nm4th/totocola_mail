@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-10-05",
+  "generated_at": "2026-10-04T16:17:16.787260",
+  "newsletters": [
+    {
+      "filename": "2026-10-05_月_満たされない夜の理由.html",
+      "date": "2026-10-05",
+      "weekday": "月",
+      "subject": "満たされない夜の理由",
+      "preview": "何かが足りない気がするのに、何が足りないかわからない夜。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "満たされない感覚の正体"
+    },
+    {
+      "filename": "2026-10-06_火_夜に眠れない夜がある.html",
+      "date": "2026-10-06",
+      "weekday": "火",
+      "subject": "夜に眠れない夜がある",
+      "preview": "疲れているのに眠れないのは、まだ一日が終わっていないからかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜の過ごし方・夜の終わり方"
+    },
+    {
+      "filename": "2026-10-08_木_距離を置くのは、冷たいこと？.html",
+      "date": "2026-10-08",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たいこと？",
+      "preview": "少し離れた方が、大切にできることがあるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-10-10_土_感情に気づけなくなっているとき、それは心が限界に近いサインかもしれない。.html",
+      "date": "2026-10-10",
+      "weekday": "土",
+      "subject": "感情に気づけなくなっているとき、それは心が限界に近いサインかもしれない。",
+      "preview": "見て見ぬふりをしてきた自分の気持ち、まだそこにありますか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
