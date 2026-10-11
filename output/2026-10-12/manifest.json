@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-10-12",
+  "generated_at": "2026-10-11T17:11:06.560500",
+  "newsletters": [
+    {
+      "filename": "2026-10-12_月_焦りの正体について.html",
+      "date": "2026-10-12",
+      "weekday": "月",
+      "subject": "焦りの正体について",
+      "preview": "なんとなく急いでいるのに、どこにも向かっていない気がする夜。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "焦りの感情の正体・どこにも向かっていない感覚"
+    },
+    {
+      "filename": "2026-10-13_火_夜ふかしは、逃げじゃない。.html",
+      "date": "2026-10-13",
+      "weekday": "火",
+      "subject": "夜ふかしは、逃げじゃない。",
+      "preview": "眠れないんじゃなくて、まだ終わりにしたくないのかもしれない。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "眠れない夜・夜ふかしの本当の理由"
+    },
+    {
+      "filename": "2026-10-15_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-10-15",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し離れたくなる気持ちには、ちゃんと理由がある。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置きたくなる気持ちの正体"
+    },
+    {
+      "filename": "2026-10-17_土_「もう終わりにしよう」と思っても、眠れない夜がある理由。.html",
+      "date": "2026-10-17",
+      "weekday": "土",
+      "subject": "「もう終わりにしよう」と思っても、眠れない夜がある理由。",
+      "preview": "頭が止まらないのは、弱さじゃないかもしれない。",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "考えが止まらない夜・思考の過活動"
+    }
+  ]
+}
