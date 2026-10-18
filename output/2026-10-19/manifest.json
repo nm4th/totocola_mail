@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-10-19",
+  "generated_at": "2026-10-18T15:12:44.073680",
+  "newsletters": [
+    {
+      "filename": "2026-10-19_月_泣けない夜の話.html",
+      "date": "2026-10-19",
+      "weekday": "月",
+      "subject": "泣けない夜の話",
+      "preview": "感情が出てこない夜には、理由があるかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "泣きたいのに泣けない理由"
+    },
+    {
+      "filename": "2026-10-20_火_夜の寝つきが悪い理由.html",
+      "date": "2026-10-20",
+      "weekday": "火",
+      "subject": "夜の寝つきが悪い理由",
+      "preview": "眠れない夜は、疲れていないんじゃなくて、疲れすぎているのかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "疲れているのに眠れない夜（夜の行動・睡眠前の過ごし方）"
+    },
+    {
+      "filename": "2026-10-22_木_距離を置きたい夜、ありますか.html",
+      "date": "2026-10-22",
+      "weekday": "木",
+      "subject": "距離を置きたい夜、ありますか",
+      "preview": "仲がいいからこそ、たまには遠くにいたい。その感覚は正しいと思います。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近くにいるほど、距離が必要になる関係"
+    },
+    {
+      "filename": "2026-10-24_土_心が「もう限界」と言っているのに、気づけない理由。.html",
+      "date": "2026-10-24",
+      "weekday": "土",
+      "subject": "心が「もう限界」と言っているのに、気づけない理由。",
+      "preview": "疲れているのに、疲れていないふりをしていませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の限界に気づけない理由"
+    }
+  ]
+}
