@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-11-02",
+  "generated_at": "2026-11-01T17:30:00.477118",
+  "newsletters": [
+    {
+      "filename": "2026-11-02_月_感情が鈍くなる理由.html",
+      "date": "2026-11-02",
+      "weekday": "月",
+      "subject": "感情が鈍くなる理由",
+      "preview": "忙しくなるほど、自分の気持ちが遠くなっていく。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "自分の感情に気づけなくなる理由"
+    },
+    {
+      "filename": "2026-11-03_火_夜に作る習慣の話.html",
+      "date": "2026-11-03",
+      "weekday": "火",
+      "subject": "夜に作る習慣の話",
+      "preview": "何かを続けようとするたびに、なぜか続かない。そんな夜に読んでほしい話です。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "続けようとするほど続かない夜の習慣"
+    },
+    {
+      "filename": "2026-11-05_木_誰かといると疲れますか.html",
+      "date": "2026-11-05",
+      "weekday": "木",
+      "subject": "誰かといると疲れますか",
+      "preview": "距離を置きたいのは、嫌いだからじゃないかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "好きなのに距離を置きたくなる理由"
+    },
+    {
+      "filename": "2026-11-07_土_感情を無視し続けると、自分がどこにいるかわからなくなる理由.html",
+      "date": "2026-11-07",
+      "weekday": "土",
+      "subject": "感情を無視し続けると、自分がどこにいるかわからなくなる理由",
+      "preview": "気づけば、何を感じているかわからない夜になっていませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "感情を無視し続けると自分を見失う理由"
+    }
+  ]
+}
