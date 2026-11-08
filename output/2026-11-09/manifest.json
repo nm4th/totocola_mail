@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-11-09",
+  "generated_at": "2026-11-08T17:28:54.558113",
+  "newsletters": [
+    {
+      "filename": "2026-11-09_月_なぜか泣けない夜のこと.html",
+      "date": "2026-11-09",
+      "weekday": "月",
+      "subject": "なぜか泣けない夜のこと",
+      "preview": "悲しいのに、涙が出ない。それにも、ちゃんと理由があります。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "泣けない夜の感情の凍りつき"
+    },
+    {
+      "filename": "2026-11-10_火_寝る前のルーティンが、空になっていた。.html",
+      "date": "2026-11-10",
+      "weekday": "火",
+      "subject": "寝る前のルーティンが、空になっていた。",
+      "preview": "何かをしているのに、何も残っていない夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜のルーティンが形骸化している感覚"
+    },
+    {
+      "filename": "2026-11-12_木_距離を置くのは、冷たいこと？.html",
+      "date": "2026-11-12",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たいこと？",
+      "preview": "少し離れることで、やっと見えてくるものがある気がします。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "距離を置くことへの罪悪感"
+    },
+    {
+      "filename": "2026-11-14_土_心がざわつく夜に、自分の感情を見失ってしまう理由。.html",
+      "date": "2026-11-14",
+      "weekday": "土",
+      "subject": "心がざわつく夜に、自分の感情を見失ってしまう理由。",
+      "preview": "何かが引っかかっているのに、それが何かわからない夜、ありませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
