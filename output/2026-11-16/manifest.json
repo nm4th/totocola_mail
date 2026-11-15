@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-11-16",
+  "generated_at": "2026-11-15T18:21:18.215990",
+  "newsletters": [
+    {
+      "filename": "2026-11-16_月_満たされない夜の理由.html",
+      "date": "2026-11-16",
+      "weekday": "月",
+      "subject": "満たされない夜の理由",
+      "preview": "何かが足りない気がするのは、何かが多すぎるせいかもしれません。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "満たされない感覚の正体"
+    },
+    {
+      "filename": "2026-11-17_火_夜の寄り道を、やめられない。.html",
+      "date": "2026-11-17",
+      "weekday": "火",
+      "subject": "夜の寄り道を、やめられない。",
+      "preview": "帰り道が長くなる夜には、理由があるかもしれません。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "帰り道が長くなる夜の心理"
+    },
+    {
+      "filename": "2026-11-19_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-11-19",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し遠ざかりたくなるのは、たぶん疲れているからだと思います。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近いのに離れたくなる人間関係の疲れ"
+    },
+    {
+      "filename": "2026-11-21_土_なぜ、自分の気持ちに気づくのがこんなに遅くなったんだろう。.html",
+      "date": "2026-11-21",
+      "weekday": "土",
+      "subject": "なぜ、自分の気持ちに気づくのがこんなに遅くなったんだろう。",
+      "preview": "怒っているのか、悲しいのか、それさえわからない夜はありませんか？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の感情に気づけなくなる理由"
+    }
+  ]
+}
