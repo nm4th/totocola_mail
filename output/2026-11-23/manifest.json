@@ -1,0 +1,54 @@
+{
+  "start_date": "2026-11-23",
+  "generated_at": "2026-11-22T18:55:35.283546",
+  "newsletters": [
+    {
+      "filename": "2026-11-23_月_泣けない夜の話。.html",
+      "date": "2026-11-23",
+      "weekday": "月",
+      "subject": "泣けない夜の話。",
+      "preview": "涙が出ない夜は、感情が壊れたわけじゃないと思います。",
+      "preview_pattern": "A",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "short",
+      "theme": "泣けない夜に感情が動かない理由"
+    },
+    {
+      "filename": "2026-11-24_火_夜に積むより、夜に削る。.html",
+      "date": "2026-11-24",
+      "weekday": "火",
+      "subject": "夜に積むより、夜に削る。",
+      "preview": "寝る前にやることを増やしているのに、なぜか疲れが残る夜がある。",
+      "preview_pattern": "B",
+      "subject_type": "statement",
+      "theme_direction": "夜の行動・習慣系",
+      "length": "short",
+      "theme": "夜に何かを積み上げようとする習慣の疲れ"
+    },
+    {
+      "filename": "2026-11-26_木_距離を置くのは、冷たさじゃない。.html",
+      "date": "2026-11-26",
+      "weekday": "木",
+      "subject": "距離を置くのは、冷たさじゃない。",
+      "preview": "少し離れることで、もっと大切にできる関係があります。",
+      "preview_pattern": "A",
+      "subject_type": "question",
+      "theme_direction": "人間関係・他者との距離系",
+      "length": "short",
+      "theme": "近いのに疲れる関係と、適切な距離の話"
+    },
+    {
+      "filename": "2026-11-28_土_自分の気持ちに正直になれない夜が続いているのは、なぜだろう。.html",
+      "date": "2026-11-28",
+      "weekday": "土",
+      "subject": "自分の気持ちに正直になれない夜が続いているのは、なぜだろう。",
+      "preview": "正直でいることが、こんなに難しいのはなぜだろう？",
+      "preview_pattern": "C",
+      "subject_type": "reason",
+      "theme_direction": "自分の内側・感情系",
+      "length": "long",
+      "theme": "自分の気持ちに正直になれない理由"
+    }
+  ]
+}
